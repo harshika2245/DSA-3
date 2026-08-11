@@ -1,0 +1,17 @@
+import java.util.Scanner;
+public class ReverseOrder{
+    public static void main(String args[]){
+        Scanner sc = new Scanner(System.in);
+        System.out.print("n = ");
+        int n = sc.nextInt();
+        System.out.print("The original array is: ");
+        int a[] = new int[n];
+        for(int i=0;i<n;i++){
+            a[i] = sc.nextInt();
+        }
+        System.out.print("The reversed array is: ");
+        for(int i=n-1;i>=0;i--){
+            System.out.print(a[i]+" ");
+        }
+    }
+}
